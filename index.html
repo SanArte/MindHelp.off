@@ -497,7 +497,9 @@ window.runAfterDomBinding = {
   <div class="waypoint"></div>
   <div class="section-anchor"></div>
   <div class="lazyload s-bg-image s-bg-blurred s-contact-section s-section s-bottom-padding-half background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_1/17812398/758202_539739.jpg)">
-    <style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style>
+    <style data-emotion="css 1tnf9eu">
+      .css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}
+    </style>
     <div class="blurred-layer css-1tnf9eu css-1g80h9c0"></div>
     <div class="container ">
       <div class="columns sixteen">
@@ -568,20 +570,23 @@ window.runAfterDomBinding = {
                         <div class="s-email-form-field s-name-field">
                           <div class="s-font-body">
                             <label>Nombre</label>
-                            <input type="text" name="Nombre" aria-label="Nombre" required/>
+                            <input type="text" name="Nombre" aria-label="Nombre" required onfocus="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                            <span style="display:none;">Escribe tu nombre</span>
                           </div>
                         </div>
                         <div class="s-email-field s-email-form-field">
                           <div class="s-font-body">
                             <label>Correo</label>
-                            <input type="email" name="Correo" aria-label="Correo" required/>
+                            <input type="email" name="Correo" aria-label="Correo" required onfocus="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                            <span style="display:none;">Escribe tu correo</span>
                           </div>
                         </div>
                       </div>
                       <div class="s-email-form-field s-message-field">
                         <div class="s-font-body">
                           <label>Mensaje</label>
-                          <textarea name="Mensaje" aria-label="Mensaje" required></textarea>
+                          <textarea name="Mensaje" aria-label="Mensaje" required onfocus="this.style.display='none'; this.nextElementSibling.style.display='block';"></textarea>
+                          <span style="display:none;">Escribe tu mensaje</span>
                         </div>
                       </div>
                       <div class="s-email-form-field s-submit-field">
@@ -602,7 +607,8 @@ window.runAfterDomBinding = {
     </div>
   </div>
 </li>
-
+  </div>
+  
 <div id='fb-root'></div>
 <div id='app-script-root'></div>
 <div id='app-view-root'></div>
